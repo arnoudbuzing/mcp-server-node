@@ -2,9 +2,9 @@
   "mcpServers": {
     "wolfram-alpha": {
       "command": "node",
-      "args": ["/Users/arnoudb/mcp-server-node/mcp-server.js"],
+      "args": ["...../mcp-server-node/mcp-server.js"],
       "env": {
-        "WOLFRAM_API_KEY": "JQVGQH-24RGK5KJ2A"
+        "WOLFRAM_API_KEY": "YOUR_API_KEY"
       }
     }
   }
