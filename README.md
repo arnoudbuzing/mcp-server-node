@@ -16,4 +16,4 @@ cd wolfram-mcp-server
 npm install
 ```
 
-4. Configure the MSP client, see mcp.json for an example configuration. You will need a "Short Answers" Wolfram Alpha API key. You can get one from https://developer.wolframalpha.com/access
+4. Configure the MSP client (e.g. VS Code or Claude), see mcp.json for an example configuration. You will need a "Short Answers" Wolfram Alpha API key. You can get one from https://developer.wolframalpha.com/access
