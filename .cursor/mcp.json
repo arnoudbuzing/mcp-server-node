@@ -1,10 +1,10 @@
 {
   "mcpServers": {
-    "Node.js MCP Server": {
-      "command": "/path/to/node",
-      "args": ["/path/to/mcp-server.js"],
+    "Wolfram MCP Server": {
+      "command": "/opt/homebrew/bin/node",
+      "args": ["/Users/arnoudb/mcp-server-node/mcp-server.js"],
       "env": {
-        "API_KEY": "abc-1234567890"
+        "WOLFRAM_API_KEY": "JQVGQH-24RGK5KJ2A"
       }
     }
   }
