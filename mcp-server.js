@@ -4,31 +4,25 @@ import { z } from "zod"
 import { promises as fs } from "fs"
 
 const server = new McpServer({
-  name: "Wolfram MCP Server",
+  name: "wolfram-alpha",
   version: "1.0.0",
 })
 
-server.tool("add", "Add two numbers", { a: z.number(), b: z.number() }, async ({ a, b }) => ({
-  content: [{ type: "text", text: String(a + b) }],
-}))
-
 server.tool(
   "wolfram-alpha", 
-  "Call the computational knowledgebase called Wolfram Alpha", 
+  "Wolfram Alpha makes systematic knowledge computable", 
   { input: z.string() }, 
   async ({ input }) => {
-    // const response = await fetch(`https://api.wolframalpha.com/v1/result?i=${encodeURIComponent(input)}&appid=${process.env.WOLFRAM_API_KEY}`);
-    const response = await fetch(`https://api.wolframalpha.com/v1/result?i=${encodeURIComponent(input)}&appid=JQVGQH-24RGK5KJ2A`);
+    console.log("Wolfram Alpha input:", input);
+    console.log("Wolfram Alpha API Key:", process.env.WOLFRAM_API_KEY);
+    const response = await fetch(`https://api.wolframalpha.com/v1/result?i=${encodeURIComponent(input)}&appid=${process.env.WOLFRAM_API_KEY}`);
+    // const response = await fetch(`https://api.wolframalpha.com/v1/result?i=${encodeURIComponent(input)}&appid=JQVGQH-24RGK5KJ2A`);
     const result = await response.text();
     return {
       content: [{ type: "text", text: result }]
     };
   }
 )
-
-server.tool("getApiKey", "Get the API key", {}, async ({}) => ({
-  content: [{ type: "text", text: process.env.API_KEY }],
-}))
 
 const transport = new StdioServerTransport()
 await server.connect(transport)

@@ -1,7 +1,7 @@
 {
   "mcpServers": {
-    "Wolfram MCP Server": {
-      "command": "/opt/homebrew/bin/node",
+    "wolfram-alpha": {
+      "command": "node",
       "args": ["/Users/arnoudb/mcp-server-node/mcp-server.js"],
       "env": {
         "WOLFRAM_API_KEY": "JQVGQH-24RGK5KJ2A"
