@@ -1,3 +1,9 @@
+# Wolfram MCP Server
+
+This is a simple server that acts as a bridge between the Wolfram Alpha API and the MCP (Model Context Protocol) used by various clients like VS Code, Cursor, and Claude. It allows you to send queries to Wolfram Alpha and receive responses in a format that can be used by these clients.
+
+Requirements: You need to have Node.js and npm installed on your system.
+
 1. Clone the repository:
 
 ```
