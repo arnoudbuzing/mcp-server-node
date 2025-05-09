@@ -2,7 +2,7 @@
   "mcpServers": {
     "wolfram-alpha": {
       "command": "node",
-      "args": ["/path/to/mcp-server-node/mcp-server.js"],
+      "args": ["/path/to/wolfram-mcp-server/server.js"],
       "env": {
         "WOLFRAM_API_KEY": "YOUR_API_KEY"
       }
