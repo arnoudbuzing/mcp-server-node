@@ -25,3 +25,7 @@ npm install
 4. Get a Wolfram Alpha API key from https://developer.wolframalpha.com/access
 
 4. Configure your MSP client (e.g. VS Code or Claude) by providing the MSP server configuration. See `config.json` for an example configuration that works with this server. You will need to set the path to the `server.js` file and also set the Wolfram Alpha API key.
+
+Example from VS Code with Copilot:
+
+![Example Configuration](example.png)
