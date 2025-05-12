@@ -4,7 +4,7 @@
       "command": "node",
       "args": ["/path/to/wolfram-mcp-server/server.js"],
       "env": {
-        "WOLFRAM_API_KEY": "JQVGQH-24RGK5KJ2A"
+        "WOLFRAM_API_KEY": "change-me"
       }
     }
   }
